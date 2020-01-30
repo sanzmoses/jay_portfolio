@@ -1,0 +1,119 @@
+// GOOGLE FONTS
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,700,900&display=swap');
+
+// BASE FRAMEWORK
+@import '../../node_modules/uikit/src/less/uikit.less';
+
+
+// GLOBAL VARIABLES
+@primary: #583F91;
+@secondary: #EA4C8B;
+@white: #FFFFFF;
+@main-font: 'Rubik', sans-serif;
+
+@normal: 400;
+@bold: 700;
+@bolder: 900;
+
+
+// FRAMEWORK OVERRIDES
+/* variables and hooks */
+@base-body-font-family: @main-font;
+@base-body-color: @white;
+@base-body-background: @primary;
+
+@base-heading-font-family:                      @main-font;
+@base-heading-font-weight:                      @bolder;
+@base-heading-color:                            @white;
+@base-heading-text-transform:                   none;
+@base-heading-margin-top:                       @global-medium-margin;
+
+.soft-transition() {
+	transition: all 0.4s ease;
+}
+
+.description {
+	max-width: 327px;
+	margin: 20px auto;
+
+	@media (min-width: @breakpoint-small) {
+	    margin: 20px 0px;
+	}
+}
+
+.hook-button() {
+	.soft-transition;
+	font-style: @main-font;
+	border-radius: 21px;
+	box-sizing: border-box;
+	font-weight: @bold;
+	text-transform: lowercase;
+	background-color: @secondary;
+	padding: 7px 29px;
+}
+
+.skills {
+	div {
+		display: flex;
+		justify-content: center;
+	}
+
+	.skill {
+		height: 112px;
+	}
+}
+
+section {
+	min-height: 100vh;
+	padding-top: 70px;
+	padding-bottom: 50px;
+
+	// h2 {
+	// 	font-size: 76px;
+	// }
+}
+
+#g-skills {
+	background-color: #22AF8B;
+}
+
+#recent-works {
+	background-color: #00B1DB;
+}
+
+footer {
+	background: linear-gradient(270deg, #4B529F 0%, #6C4B9B 9%, #AE3E92 30%, #D8358C 45%, #E8328A 53%, #EC5D8C 73%, #EF7A8D 90%, #F0858E 100%);
+	padding: 30px 0px 50px 0px;
+
+	.info {
+		margin-top: 50px;
+	}
+
+	.contacts {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+
+		div {
+			display: flex;
+			flex-direction: row;
+			justify-content: left;
+			align-content: center;
+			margin-bottom: 10px;
+
+			h4 {
+				margin: 10px 20px;
+			}
+		}
+	}
+
+	.box {
+		background-color: @white;
+		border-radius: 59px;
+		padding: 40px 50px;
+
+		h3 {
+			color: @primary;
+		}
+	}
+}
